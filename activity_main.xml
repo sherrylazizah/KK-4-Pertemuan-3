@@ -1,24 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#ffffff">
+    android:stretchColumns="1">
 
-    <TextView
-        android:layout_width="350dp"
-        android:layout_height="350dp"
-        android:layout_gravity="center"
-        android:background="#e1d5eb" />
-    <Button
-        android:layout_width="300px"
-        android:layout_height="100px"
-        android:layout_gravity="center"
-        android:text="Tombol"
-        android:background="#deebd5"
-        android:textColor="#fff"
-        android:textSize="15sp" />
+    <TableRow
+        android:background="#22ff">
+        <TextView
+            android:layout_column="1"
+            android:text="Open.."
+            android:padding="3dip"/>
+        <TextView
+            android:text="Ctrl-O"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+    <TableRow
+        android:background="#22ff">
+        <TextView
+            android:layout_column="1"
+            android:text="Save.."
+            android:padding="3dip"/>
+        <TextView
+            android:text="Ctrl-S"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+    <TableRow
+        android:background="#22ff">
+        <TextView
+            android:layout_column="1"
+            android:text="Save as.."
+            android:padding="3dip"/>
+        <TextView
+            android:text="Ctrl-Shift-S"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#ff909090"/>
+    <TableRow
+        android:background="#ffff00">
+        <TextView
+            android:text="X"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Import.."
+            android:padding="3dip"/>
+    </TableRow>
+    <TableRow
+        android:background="#ffff00">
+        <TextView
+            android:text="X"
+            android:padding="3dip"/>
+        <TextView
+            android:text="Export.."
+            android:padding="3dip"/>
+        <TextView
+            android:text="Ctrl-E"
+            android:gravity="right"
+            android:padding="3dip"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
 
-</FrameLayout>
+    <TableRow
+        android:background="#aaf">
+        <TextView
+            android:layout_column="1"
+            android:text="Quit"
+            android:padding="3dip"/>
+    </TableRow>
+</TableLayout>
