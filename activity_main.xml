@@ -1,80 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ffffff">
 
-    <TableRow android:Layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:background="#e1d5eb" />
+    <Button
+        android:layout_width="300px"
+        android:layout_height="100px"
+        android:layout_gravity="center"
+        android:text="Tombol"
+        android:background="#deebd5"
+        android:textColor="#fff"
+        android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/TextTable"
-            android:layout_weight="1"
-            android:background="#b0b0b0"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Row 3 column 1"
-            android:textColor="#000000"/>
-
-        <TextView
-            android:id="@+id/TextTable2"
-            android:layout_weight="1"
-            android:background="#a09f9f"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Row 3 column 2"
-            android:textColor="#000000"
-            />
-
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/TextTable3"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#a05f"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Row 4 column 2"
-            android:textColor="#000000" />
-    </TableRow>
-
-    <TableRow>
-
-        <TextView
-            android:id="@+id/TextTable4"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#a141"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Row 5 col 4"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/TextTable5"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#a141"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Row 5 col 5"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/TextTable6"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#a141"
-            android:gravity="center"
-            android:padding="20dp"
-            android:text="Row 5 col 6"
-            android:textColor="#000000" />
-    </TableRow>
-
-</TableLayout>
+</FrameLayout>
